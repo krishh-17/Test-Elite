@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Article</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .blog-article-container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .blog-article-container img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 1.5rem;
+    }
+    .blog-article-meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+    .blog-article-container h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .blog-article-container p {
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .blog-article-container h2 {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      color: #444;
+    }
+    .back-to-blog {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BLOG ARTICLE CONTENT -->
+  <section class="blog-article-container">
+    <img id="blogImage" src="" alt="">
+    <div class="blog-article-meta" id="blogMeta"></div>
+    <h1 id="blogTitle"></h1>
+    <div id="blogContent"></div>
+    <a href="index.html#blogs" class="back-to-blog">← Back to Blogs</a>
+  </section>
+
+  <script src="blogData.js"></script>
+  <script src="blogLoader.js"></script>
+</body>
+</html>
