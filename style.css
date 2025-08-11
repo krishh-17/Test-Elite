@@ -129,20 +129,16 @@
 
 /* Desktop fix: keep cart icon far right */
 @media (min-width: 769px) {
-    .nav-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .nav-links {
+        flex: 1; /* take up remaining space */
     }
 
-    .nav-links {
+    /* Push last nav item (cart) to far right */
+    .nav-links li:last-child {
         margin-left: auto;
     }
-
-    .cart-icon {
-        margin-left: 1.5rem;
-    }
 }
+
 
         /* Enhanced Hero Section */
         .hero {
