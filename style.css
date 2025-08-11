@@ -1222,7 +1222,8 @@
     .preview-modal iframe,
     .preview-modal img {
         width: 100% !important;
-        height: auto !important;
+        height: 70vh !important;
+        border-radius: 15px;
     }
 
     .cart-modal {
