@@ -272,8 +272,8 @@ function viewTemplate(templateId) {
         // Show live iframe if previewLink exists, else fallback to image
         if (template.previewLink) {
             previewImage.innerHTML = `
-                <iframe src="${template.previewLink}" style="width: 100%; height: 400px; border: none; border-radius: 15px;"></iframe>
-            `;
+              <iframe src="${template.previewLink}" style="width:100%; height:70vh; border:none; border-radius:15px;" loading="lazy"></iframe>
+             `;
         } else {
             previewImage.innerHTML = `<img src="${template.image}" alt="${template.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;" onerror="this.style.display='none'; this.parentElement.innerHTML='${template.name}';">`;
         }
