@@ -129,15 +129,24 @@
 
 /* Desktop fix: keep cart icon far right */
 @media (min-width: 769px) {
-    .nav-links {
-        flex: 1; /* take up remaining space */
+    .nav-container {
+        display: flex;
+        align-items: center;
     }
-
-    /* Push last nav item (cart) to far right */
-    .nav-links li:last-child {
+    .nav-links {
+        display: flex;
+        gap: 2.5rem;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+    .cart-icon {
         margin-left: auto;
     }
+    .nav-toggle {
+        display: none; /* hide hamburger in desktop */
+    }
 }
+
 
 
         /* Enhanced Hero Section */
