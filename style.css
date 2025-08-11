@@ -1219,12 +1219,54 @@
         width: 100%;
     }
 
-    .preview-modal iframe,
-    .preview-modal img {
-        width: 100% !important;
-        height: 70vh !important;
-        border-radius: 15px;
-    }
+    .preview-modal { align-items: flex-start; }
+
+  .preview-content {
+    position: fixed;
+    top: 4%;
+    left: 2.5%;
+    right: 2.5%;
+    bottom: 4%;
+    transform: none;
+    width: 95%;
+    height: 92vh;
+    max-height: 92vh;
+    padding: 12px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .preview-header {
+    flex: 0 0 auto;
+    padding: 8px 12px;
+  }
+
+  .preview-image {
+    flex: 1 1 auto;
+    min-height: 55vh;
+    margin-bottom: 8px;
+  }
+
+  .preview-image iframe,
+  .preview-image img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 55vh !important;
+    border-radius: 12px;
+    display: block;
+  }
+
+  #previewInfo {
+    flex: 0 0 auto;
+    padding: 8px 12px;
+    overflow-y: auto;
+    max-height: 30vh;
+  }
+
+  .preview-header h2 { font-size: 1.15rem; margin: 0; }
+  .close-preview { font-size: 1.4rem; }
 
     .cart-modal {
         width: 90%;
