@@ -600,7 +600,20 @@ setTimeout(() => {
         cardObserver.observe(card);
     });
 }, 100);
+/* Responsive fix for Get in Touch contact grid */
+@media (max-width: 768px) {
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: stretch;
+    }
 
-
+    .contact-method {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
 
 
